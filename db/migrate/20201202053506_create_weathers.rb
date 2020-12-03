@@ -5,9 +5,10 @@ class CreateWeathers < ActiveRecord::Migration[6.0]
       t.integer :precipitation
       t.integer :humidity
       t.integer :wind
+      t.belongs_to :city
       t.string :password
-
       t.timestamps
     end
   end
 end
+∂
